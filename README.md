@@ -5,7 +5,9 @@
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
 ```
 
-## Apply the k8s manifests using make file
+# make commands for easiness
+
+## Apply the k8s manifests using
 ```sh
 make dbuild
 ```
