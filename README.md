@@ -37,7 +37,7 @@ make k8sdepall
 make k8sdelall
 ```
 
-## Port forward for the ingress for local
+## Port forward for the ingress running in local
 ```sh
 make pf
 ```
