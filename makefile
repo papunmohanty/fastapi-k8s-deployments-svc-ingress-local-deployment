@@ -1,5 +1,9 @@
 dbuild:
 	docker build -t sample-fastapi-app .
+	docker tag
+
+dtag:
+	docker tag sample-fastapi-app:latest papunmohanty/sample-fastapi-app
 
 dlogin:
 	docker login

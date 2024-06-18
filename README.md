@@ -10,9 +10,14 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main
 make dbuild
 ```
 
-## Docker login, to push image to docker repo
+## Apply tag to the docker image
 ```sh
-make dpush
+make dtag
+```
+
+## Login to docker hub
+```sh
+make dlogin
 ```
 
 ## Push the image to the docker hub
@@ -20,7 +25,17 @@ make dpush
 make dpush
 ```
 
+## Create all resources for the application
+```sh
+make k8sdepall
+```
+
+## Delete all resources for the application
+```sh
+make k8sdelall
+```
+
 ## Port forward for the ingress for local
 ```sh
-kubectl port-forward svc/sample-fastapi-app-service --address=0.0.0.0 8000:8000
+make pf
 ```
