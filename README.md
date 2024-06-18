@@ -1,9 +1,11 @@
+# Steps to build and run the application using k8s
+
 ## Create ngnix as ingress class
 ```sh
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
 ```
 
-## Apply the k8s deployments using make file
+## Apply the k8s manifests using make file
 ```sh
 make dbuild
 ```
